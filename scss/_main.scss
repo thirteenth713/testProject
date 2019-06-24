@@ -1,0 +1,17 @@
+body {
+  background: url('/images/background.png') no-repeat;
+  background-size: cover;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
