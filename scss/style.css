@@ -7,6 +7,10 @@ li {
   list-style: none;
 }
 
+ul {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,6 +22,47 @@ a:hover {
 * {
   margin: 0;
   padding: 0;
+}
+
+.main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards_section_wrapper {
+  max-width: 900px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section_header__container {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 17%;
+}
+
+.sectin_header__container_headline {
+  color: #2b2b2b;
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: -1.5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .section_cards__wrapper {
@@ -185,9 +230,16 @@ a:hover {
 }
 
 /* Similar goods styles end */
+@font-face {
+  font-family: 'Arial MT';
+  src: url("../fonts/ArialMT.otf");
+}
+
 .section_filters__wrapper {
   width: 270px;
   max-height: 380px;
+  border: 1px solid #ebebeb;
+  background-color: #fbfbfb;
 }
 
 ul {
@@ -200,11 +252,8 @@ a {
 
 .accordion_menu {
   width: 100%;
-  max-width: 350px;
   height: 100%;
   max-height: 380px;
-  background: #fff;
-  border-radius: 4px;
 }
 
 li.open {
@@ -213,9 +262,11 @@ li.open {
 
 .section_filter__name_filter {
   color: #343434;
+  font-family: "Arial - Bold MT", Arial;
   font-size: 14px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 40px;
+  padding-left: 20px;
   letter-spacing: 0.14px;
 }
 
@@ -231,9 +282,10 @@ li.open {
 .dropdownlink {
   cursor: pointer;
   display: block;
-  padding: 15px 15px 15px 45px;
+  height: 40px;
   font-size: 18px;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   color: #212121;
   position: relative;
   -webkit-transition: all 0.4s ease-out;
@@ -251,19 +303,104 @@ li.open {
   left: auto;
 }
 
+.dropdownlink_first {
+  border-top: none;
+}
+
 .submenuItems {
   display: none;
+  overflow-y: scroll;
+  height: 100%;
+  max-height: 180px;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.submenuItems::-webkit-scrollbar {
+  width: 13px;
+  height: 65px;
+}
+
+.submenuItems::-webkit-scrollbar-thumb {
+  background-color: #93deff;
+}
+
+.submenuItems::-webkit-scrollbar-track {
+  margin-left: 40px;
 }
 
 .submenuItems a {
   display: block;
   color: #444444;
-  padding: 12px 12px 12px 45px;
+  padding: 5px 12px 5px 30px;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  font-family: "Arial MT", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.13px;
 }
 
 .submenuItems a:hover {
   color: #39a6be;
+}
+
+.section_filter__select_size {
+  width: 160px;
+  height: 30px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+  border: 1px solid #e1e1e1;
+  background-color: #f3f3f3;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: -0.7px;
+  padding-left: 14px;
+  left: 23px;
+  position: relative;
+}
+
+.section_filter__chooseColor_input {
+  width: 160px;
+  height: 30px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+  border: 1px solid #e1e1e1;
+  background-color: #f3f3f3;
+  color: #464646;
+  font-family: "Open Sans", Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.7px;
+  padding-left: 14px;
+  left: 40px;
+  position: relative;
+}
+
+.apply_filter {
+  height: 40px;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.apply_filter span {
+  line-height: 40px;
+  color: #36a8bf;
+  font-family: Arial MT, Arial;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+}
+
+@media all and (max-width: 1300px) {
+  .cards_section_wrapper {
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

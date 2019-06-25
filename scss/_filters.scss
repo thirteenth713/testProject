@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Arial MT';
+  src: url('../fonts/ArialMT.otf');
+}
 .section_filters__wrapper {
   width: 270px;
   max-height: 380px;
+  border: 1px solid #ebebeb;
+  background-color: #fbfbfb;
 }
 
 
@@ -19,22 +25,22 @@ a {
 // }
 .accordion_menu {
   width: 100%;
-  max-width: 350px;
-  // margin: 60px auto 20px;
+  // max-width: 350px;
   height: 100%;
   max-height: 380px;
-  background: #fff;
-  border-radius: 4px;
+  // background: #fff;
+  // border-radius: 4px;
 }
 li.open {
   overflow: auto;
 }
 .section_filter__name_filter {
   color: #343434;
-  // font-family: "Arial - Bold MT", Arial - Bold;
+  font-family: "Arial - Bold MT", Arial;
   font-size: 14px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 40px;
+  padding-left: 20px;
   letter-spacing: 0.14px;
 }
 .accordion_menu li.open .dropdownlink {
@@ -48,9 +54,11 @@ li.open {
 .dropdownlink {
   cursor: pointer;
   display: block;
-  padding: 15px 15px 15px 45px;
+  height: 40px;
+  // padding: 15px 15px 15px 45px;
   font-size: 18px;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   color: #212121;
   position: relative;
   transition: all 0.4s ease-out;
@@ -64,40 +72,100 @@ li.open {
     left: auto;
   }
 }
+.dropdownlink_first {
+  border-top: none;
+}
 
 .submenuItems {
   display: none;
-  // background: #C8E6C9;
-  li {
-    // border-bottom: 1px solid #B6B6B6;
-  }
+  overflow-y: scroll;
+  height: 100%;
+  max-height: 180px;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
-// ::-webkit-scrollbar{
-//   width: 12px;
-// }
-// ::-webkit-scrollbar-thumb{
-//   border-width:1px 1px 1px 2px;
-//   border-color: #777;
-//   background-color: #aaa;
-// }
-// ::-webkit-scrollbar-thumb:hover{
-//   border-width: 1px 1px 1px 2px;
-//   border-color: #555;
-//   background-color: #777;
-// }
-// ::-webkit-scrollbar-track{
-//   border-width:0;
-// }
-// ::-webkit-scrollbar-track:hover{
-//   border-left: solid 1px #aaa;
-//   background-color: #eee;
-// }
+.submenuItems::-webkit-scrollbar {
+    width: 13px;
+    height: 65px;
+  }
+.submenuItems::-webkit-scrollbar-thumb {
+  background-color: #93deff;
+}
+.submenuItems::-webkit-scrollbar-track {
+  margin-left: 40px;
+
+}
 .submenuItems a {
   display: block;
   color: #444444;
-  padding: 12px 12px 12px 45px;
+  padding: 5px 12px 5px 30px;
   transition: all 0.4s ease-out;
+  font-family: "Arial MT", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.13px;
   &:hover {
     color: #39a6be;
+  }
+}
+
+.section_filter__select_size {
+  width: 160px;
+  height: 30px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+  border: 1px solid #e1e1e1;
+  background-color: #f3f3f3;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: -0.7px;
+  padding-left: 14px;
+  left: 23px;
+  position: relative;
+}
+// .section_filter__select_size {
+//   -moz-appearance:none; /* Firefox */
+//   -webkit-appearance:none; /* Safari and Chrome */
+//   appearance:none;
+//   &:before {
+//     background-image: url('../images/rectangl.png') no-repeat;
+//     position: absolute;
+//     z-index: 1;
+//     top: 0;
+//   }
+// }
+
+.section_filter__chooseColor_input {
+  width: 160px;
+  height: 30px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.14);
+  border: 1px solid #e1e1e1;
+  background-color: #f3f3f3;
+  color: #464646;
+  font-family: "Open Sans", Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.7px;
+  padding-left: 14px;
+  left: 40px;
+  position: relative;
+}
+
+.apply_filter {
+  height: 40px;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  cursor: pointer;
+  span {
+    line-height: 40px;
+    color: #36a8bf;
+    font-family: Arial MT, Arial;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.13px;
   }
 }
