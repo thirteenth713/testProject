@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
   <link rel="stylesheet" href="scss/style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
   <script egrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/135d89dad5.js"></script>
@@ -31,10 +35,8 @@
 
 
 <main>
-<!-- <!-- <div class="container"> -->
-  <div class="main_wrapper">
+  <div class="main_wrapper"><!--main wrapper start-->
 
-      <!-- <div class="col-6 col-md-4 col-lg-2 col-xl-2">col-lg-2 -->
         <!-- section filters start -->
           <section class="section_filters">
             <div class="section_filters__wrapper"><!--Start section filter wrapper-->
@@ -112,345 +114,493 @@
             </div><!--End section filter wrapper-->
           </section>
           <!-- Section filters end -->
-        <!-- </div>col-lg-2 -->
 
       
-        <!-- <div class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-10">col-lg-6 -->
           <!-- Section cards start -->
-          <div class="cards_section_wrapper">
-          <section class="section_cards">
-            <div class="section_cards__wrapper"><!--Div section cards wrapper start-->
-          
-              <div class="section_cards__card_item card_item"><!--Div section cards card item-->
-                <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
-                  <div class="section_cards__new_item_marker new_item_marker">
-                    <a href="#" class="section_cards__link_new_item link_new_item">
-                      <span class="section_cards__new_item_marker_text new_item_marker_text">новинка</span>
-                    </a>
-                  </div>
-                  <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
-                  <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
-                    <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_cards__label_rating label_rating"></label>
-                      </div><!--Sections cards rating block-->
-                  </div><!--Section cards item stars-->
-                  <div class="section_cards__item_title item_title">
-                    <span class="section_cards__title title">
-                      <a href="#">
-                        Свитер в полоску
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_cards__dividing_line_block dividing_line_block">
-                    <span class="section_cards__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_cards__price_block price_block">
-                    <span class="section_cards__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section cards item titiles-->
-              </div><!--Div section cards card item-->
 
-              <div class="section_cards__card_item card_item"><!--Div section cards card item-->
-                <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
-                  <div class="section_cards__new_item_marker new_item_marker">
-                    <a href="#" class="section_cards__link_new_item link_new_item">
-                      <span class="section_cards__new_item_marker_text new_item_marker_text">новинка</span>
-                    </a>
-                  </div>
-                  <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
-                  <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
-                    <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_cards__label_rating label_rating"></label>
-                      </div><!--Sections cards rating block-->
-                  </div><!--Section cards item stars-->
-                  <div class="section_cards__item_title item_title">
-                    <span class="section_cards__title title">
-                      <a href="#">
-                        Свитер в полоску
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_cards__dividing_line_block dividing_line_block">
-                    <span class="section_cards__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_cards__price_block price_block">
-                    <span class="section_cards__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section cards item titiles-->
-              </div><!--Div section cards card item-->
-          
-              <div class="section_cards__card_item card_item"><!--Div section cards card item-->
-                <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
-                  <div class="section_cards__hit_sales hit_sales">
-                    <a href="#" class="section_cards__hit_sales_link hit_sales_link">
-                      <span class="section_cards__hit_sales hit_sales_text">хит продаж</span>
-                    </a>
-                  </div>
-                  <img src="/images/sarafan.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
-                  <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
-                    <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_cards__label_rating label_rating"></label>
-                      </div><!--Sections cards rating block-->
-                  </div><!--Section cards item stars-->
-                  <div class="section_cards__item_title item_title">
-                    <span class="section_cards__title title">
-                      <a href="#">
-                          Платье с цветочным принтом
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_cards__dividing_line_block dividing_line_block">
-                    <span class="section_cards__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_cards__price_block price_block">
-                    <span class="section_cards__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section cards item titiles-->
-              </div><!--Div section cards card item-->
-          
-              <div class="section_cards__card_item card_item"><!--Div section cards card item-->
-                <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
-                  <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
-                  <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
-                    <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_cards__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_cards__label_rating label_rating"></label>
-                      </div><!--Sections cards rating block-->
-                  </div><!--Section cards item stars-->
-                  <div class="section_cards__item_title item_title">
-                    <span class="section_cards__title title">
-                      <a href="#">
-                          Джинсовый комбинезон
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_cards__dividing_line_block dividing_line_block">
-                    <span class="section_cards__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_cards__price_block price_block">
-                    <span class="section_cards__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section cards item titiles-->
-              </div><!--Div section cards card item-->
-          
-          
-            </div><!--Div section cards wrapper end-->
-          </section>
+            <div class="cards_section_wrapper"><!--card section wrapper-->
+
+              <section class="section_cards">
+                <div class="section_cards__wrapper"><!--Div section cards wrapper start-->
+              
+                  <div class="section_cards__card_item card_item"><!--Div section cards card item-->
+                    <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
+                      <div class="section_cards__new_item_marker new_item_marker">
+                        <a href="#" class="section_cards__link_new_item link_new_item">
+                          <span class="section_cards__new_item_marker_text new_item_marker_text">новинка</span>
+                        </a>
+                      </div>
+                      <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
+                      <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
+                        <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_cards__label_rating label_rating"></label>
+                          </div><!--Sections cards rating block-->
+                      </div><!--Section cards item stars-->
+                      <div class="section_cards__item_title item_title">
+                        <span class="section_cards__title title">
+                          <a href="#">
+                            Свитер в полоску
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_cards__dividing_line_block dividing_line_block">
+                        <span class="section_cards__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_cards__price_block price_block">
+                        <span class="section_cards__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section cards item titiles-->
+                  </div><!--Div section cards card item-->
+
+                  <div class="section_cards__card_item card_item"><!--Div section cards card item-->
+                    <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
+                      <div class="section_cards__new_item_marker new_item_marker">
+                        <a href="#" class="section_cards__link_new_item link_new_item">
+                          <span class="section_cards__new_item_marker_text new_item_marker_text">новинка</span>
+                        </a>
+                      </div>
+                      <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
+                      <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
+                        <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_cards__label_rating label_rating"></label>
+                          </div><!--Sections cards rating block-->
+                      </div><!--Section cards item stars-->
+                      <div class="section_cards__item_title item_title">
+                        <span class="section_cards__title title">
+                          <a href="#">
+                            Свитер в полоску
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_cards__dividing_line_block dividing_line_block">
+                        <span class="section_cards__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_cards__price_block price_block">
+                        <span class="section_cards__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section cards item titiles-->
+                  </div><!--Div section cards card item-->
+              
+                  <div class="section_cards__card_item card_item"><!--Div section cards card item-->
+                    <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
+                      <div class="section_cards__hit_sales hit_sales">
+                        <a href="#" class="section_cards__hit_sales_link hit_sales_link">
+                          <span class="section_cards__hit_sales hit_sales_text">хит продаж</span>
+                        </a>
+                      </div>
+                      <img src="/images/sarafan.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
+                      <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
+                        <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_cards__label_rating label_rating"></label>
+                          </div><!--Sections cards rating block-->
+                      </div><!--Section cards item stars-->
+                      <div class="section_cards__item_title item_title">
+                        <span class="section_cards__title title">
+                          <a href="#">
+                              Платье с цветочным принтом
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_cards__dividing_line_block dividing_line_block">
+                        <span class="section_cards__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_cards__price_block price_block">
+                        <span class="section_cards__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section cards item titiles-->
+                  </div><!--Div section cards card item-->
+              
+                  <div class="section_cards__card_item card_item"><!--Div section cards card item-->
+                    <div class="section_cards__item_image_wrapper item_image_wrapper"><!--Section cards item image wrapper-->
+                      <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_cards__item_titles item_titles"><!--Section cards item titiles-->
+                      <div class="section_cards__item_stars item_stars"><!--Section cards item stars-->
+                        <div class="section_cards__rating_block rating_block"><!--Sections cards rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_cards__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_cards__label_rating label_rating"></label>
+                          </div><!--Sections cards rating block-->
+                      </div><!--Section cards item stars-->
+                      <div class="section_cards__item_title item_title">
+                        <span class="section_cards__title title">
+                          <a href="#">
+                              Джинсовый комбинезон
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_cards__dividing_line_block dividing_line_block">
+                        <span class="section_cards__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_cards__price_block price_block">
+                        <span class="section_cards__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section cards item titiles-->
+                  </div><!--Div section cards card item-->
+              
+              
+                </div><!--Div section cards wrapper end-->
+              </section>
           <!-- Section cards end -->
 
           <!-- Section similar goods start -->
-          <section class="section_similar_goods">
-            <div class="section_similar_goods__wrapepr"><!--Div sections similar goods wrapper start-->
+              <section class="section_similar_goods">
+
+                <!-- section similar goods titile block -->
+                <div class="section_similar_goods__title_block">
+                  <span class="section_similar_goods_title">
+                    похожие товары
+                  </span>
+                </div>
+                <!-- section similar goods titile block -->
 
 
-              <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
-                <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
-                  <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
-                  <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
-                    <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
-                      </div><!--Section similar goods rating block-->
-                  </div><!--Section similar goods item stars-->
-                  <div class="section_similar_goods__item_title item_title">
-                    <span class="section_similar_goods__title title">
-                      <a href="#">
-                        Свитер в полоску
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__dividing_line_block dividing_line_block">
-                    <span class="section_similar_goods__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__price_block price_block">
-                    <span class="section_similar_goods__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section similar goods item titiles-->
-              </div><!--Div section similar goods item-->
+                <div class="section_similar_goods__wrapepr"><!--Div sections similar goods wrapper start-->
 
-              <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
-                <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
-                  <img src="/images/sarafan.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
-                  <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
-                    <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
-                      </div><!--Section similar goods rating block-->
-                  </div><!--Section similar goods item stars-->
-                  <div class="section_similar_goods__item_title item_title">
-                    <span class="section_similar_goods__title title">
-                      <a href="#">
-                          Платье с цветочным принтом
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__dividing_line_block dividing_line_block">
-                    <span class="section_similar_goods__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__price_block price_block">
-                    <span class="section_similar_goods__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section similar goods item titiles-->
-              </div><!--Div section similar goods item-->
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/sviter.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                            Свитер в полоску
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
 
-              <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
-                <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
-                  <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
-                </div><!--Section cards item image wrapper-->
-                <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
-                  <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
-                    <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
-                      </div><!--Section similar goods rating block-->
-                  </div><!--Section similar goods item stars-->
-                  <div class="section_similar_goods__item_title item_title">
-                    <span class="section_similar_goods__title title">
-                      <a href="#">
-                          Джинсовый комбинезон
-                      </a>
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__dividing_line_block dividing_line_block">
-                    <span class="section_similar_goods__dividing_line dividing_line">
-                    </span>
-                  </div>
-                  <div class="section_similar_goods__price_block price_block">
-                    <span class="section_similar_goods__price price">
-                      123 грн
-                    </span>
-                  </div>
-                </div><!--Section similar goods item titiles-->
-              </div><!--Div section similar goods item-->
-                
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/sarafan.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                              Платье с цветочным принтом
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
 
-            </div><!--Div sections similar goods wrapper start-->
-          </section>
-        </div>
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                              Джинсовый комбинезон
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
+
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                              Джинсовый комбинезон
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
+
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                              Джинсовый комбинезон
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
+
+                  <div class="section_similar_goods__item card_item"><!--Div section similar goods item-->
+                    <div class="section_similar_goods__wrapper item_image_wrapper"><!--Section similar goods item image wrapper-->
+                      <img src="/images/kombez.png" alt="item" class="section_cards__item_image item_image">
+                    </div><!--Section cards item image wrapper-->
+                    <div class="section_similar_goods____item_titles item_titles"><!--Section similar goods item titiles-->
+                      <div class="section_similar_goods____item_stars item_stars"><!--Section similar goods item stars-->
+                        <div class="section_similar_goods____rating_block rating_block"><!--Section similar goods rating block-->
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="section_similar_goods__label_rating label_rating"></label>
+                          
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="section_similar_goods__label_rating label_rating"></label>
+                          </div><!--Section similar goods rating block-->
+                      </div><!--Section similar goods item stars-->
+                      <div class="section_similar_goods__item_title item_title">
+                        <span class="section_similar_goods__title title">
+                          <a href="#">
+                              Джинсовый комбинезон
+                          </a>
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__dividing_line_block dividing_line_block">
+                        <span class="section_similar_goods__dividing_line dividing_line">
+                        </span>
+                      </div>
+                      <div class="section_similar_goods__price_block price_block">
+                        <span class="section_similar_goods__price price">
+                          123 грн
+                        </span>
+                      </div>
+                    </div><!--Section similar goods item titiles-->
+                  </div><!--Div section similar goods item-->
+                    
+                </div><!--Div sections similar goods wrapper start-->
+
+                  <div class="section_similar_goods__arrow_block" id="arrow_block">
+                    <div class="section_similar_goods__arrow_wrapper">
+                      <div id="prevSlide">
+                        <div class="prev"></div>
+                      </div>
+                      <div id="customDots">
+                        <!-- <div class="dots"></div> -->
+                      </div>
+                      <div id='nextSlide'>
+                        <div class="next"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              </section>
+
+            </div><!--card section wrapper-->
+
           <!-- Section similar goods end -->
-        <!-- </div>col-lg-6 -->
 
-   </div>
-<!-- </div>container-fluid --> 
-
-
+   </div><!--main wrapper end-->
   </main>
 
 </body>
